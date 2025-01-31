@@ -20,7 +20,7 @@ body {
 .new-label {
     position: absolute;
     top: 20px;
-    left: -20px;
+    left: -15px;
     background-color: #ffeb99;
     padding: 8px 16px;
     border-radius: 5px 20px 20px 5px;
