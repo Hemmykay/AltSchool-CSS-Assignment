@@ -3,9 +3,229 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <nav class="nav">
+        <div class="container nav__container">
+            <img src="logo.png" alt="Logo" class="nav__logo">
+            <div class="nav__links">
+                <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#analytics">Analytics</a>
+                <a href="#help">Help</a>
+                <button class="btn btn--secondary">Login</button>
+                <button class="btn btn--primary">Try for free</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Optimize Your Online Experience with Our Advanced <span class="text-primary">URL Shortening</span> Solution</h1>
+            <p class="hero__subtitle">Personalize your shortened links to engage with your target clientele, utilize custom domains, track unlimited links, and diverse customization options to optimize your brand presence with effective user engagement.</p>
+            <div class="hero__cta">
+                <button class="btn btn--primary">Sign Up</button>
+                <button class="btn btn--outline">Learn more</button>
+            </div>
+            <div class="hero__image">
+                <img src="image.png" width="100%" alt="URL Shortening Illustration">
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container">
+            <div class="stats__header">
+                <h2>One Stop.<br>Four <span class="text-primary">Possibilities.</span></h2>
+            </div>
+            <div class="stats__grid">
+                <div class="stat-item">
+                    <h3>3M</h3>
+                    <p>Active users</p>
+                </div>
+                <div class="stat-item">
+                    <h3>60M</h3>
+                    <p>URLs/month</p>
+                </div>
+                <div class="stat-item">
+                    <h3>1B</h3>
+                    <p>Clicked & Scanned</p>
+                </div>
+                <div class="stat-item">
+                    <h3>300k+</h3>
+                    <p>App Integrations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>Why choose Scissors</h2>
+            <div class="features__grid">
+                <div class="feature-card">
+                    <h3>URL Shortening</h3>
+                    <p>Make your URLs more manageable and track their performance with our advanced shortening service.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Custom URLs</h3>
+                    <p>Create branded links that match your identity and enhance recognition.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>QR Codes</h3>
+                    <p>Generate QR codes for your links to enable quick mobile access.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Data Analytics</h3>
+                    <p>Track and analyze your link performance with detailed analytics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <div class="container">
+            <h2>A price perfect for your needs.</h2>
+            <p class="pricing__subtitle">From catering for your personal, business, event, socials needs, you can be rest assured we have you in mind in our pricing.</p>
+            
+            <div class="pricing__grid">
+                <div class="pricing-card">
+                    <div class="pricing-card__header">
+                        <h3>Basic</h3>
+                        <div class="price">Free</div>
+                        <p>Free plan for all users</p>
+                    </div>
+                    <ul class="pricing-card__features">
+                        <li>Unlimited URL Shortening</li>
+                        <li>Basic Link Analytics</li>
+                        <li>Customizable Short Links</li>
+                        <li>Standard Support</li>
+                        <li>Ad-supported</li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card pricing-card--featured">
+                    <div class="pricing-card__header">
+                        <h3>Professional</h3>
+                        <div class="price--featured">$15/month</div>
+                        <p>Ideal for business functions</p>
+                    </div>
+                    <ul class="pricing-card__features">
+                        <li>Enhanced Link Analytics</li>
+                        <li>Custom Branded Domains</li>
+                        <li>Advanced Link customization</li>
+                        <li>Priority Support</li>
+                        <li>Ad-free Experience</li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-card__header">
+                        <h3>Teams</h3>
+                        <div class="price">$25/month</div>
+                        <p>Share with up to 10 users</p>
+                    </div>
+                    <ul class="pricing-card__features">
+                        <li>Team Collaboration</li>
+                        <li>User Roles and Permissions</li>
+                        <li>Enhanced Security</li>
+                        <li>API Access</li>
+                        <li>Dedicated Account Manager</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="shortener">
+        <div class="container">
+            <div class="shortener__box">
+                <input type="text" placeholder="Paste URL here..." class="shortener__input">
+                <div class="shortener__options">
+                    <select class="shortener__select">
+                        <option>Choose Domain</option>
+                    </select>
+                    <input type="text" placeholder="Type alias here" class="shortener__alias">
+                </div>
+                <button class="btn btn--primary btn--full">Trim URL</button>
+                <p class="shortener__terms">
+                    By clicking TrimURL, I agree to the <a href="#">Terms of Service</a>,
+                    <a href="#">Privacy Policy</a> and <a href="#">Use of Cookies</a>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <h2>FAQs</h2>
+            <div class="faq__list">
+                <details class="faq__item" open>
+                    <summary>How does URL shortening work?</summary>
+                    <p>URL shortening works by taking a long URL and creating a shorter, condensed version that redirects to the original URL. When a user clicks on the shortened link, they are redirected to the intended destination.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <img src="logo2.png" alt="Logo" class="footer__logo">
+                    <div class="footer__social">
+                        <a href="#" aria-label="Twitter"><i class="icon-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="icon-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="icon-linkedin"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="icon-facebook"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4>Why Scissor?</h4>
+                        <a href="#">Scissor 101</a>
+                        <a href="#">Integrations & API</a>
+                        <a href="#">Pricing</a>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h4>Solutions</h4>
+                        <a href="#">Social Media</a>
+                        <a href="#">Digital Marketing</a>
+                        <a href="#">Customer Service</a>
+                        <a href="#">For Developers</a>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h4>Products</h4>
+                        <a href="#">Link Management</a>
+                        <a href="#">QR Codes</a>
+                        <a href="#">Link-in-bio</a>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h4>Company</h4>
+                        <a href="#">About Scissor</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Partners</a>
+                        <a href="#">Press</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Reviews</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <div class="footer__legal">
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Security</a>
+                    <span>|</span>
+                    <span>Summer 2023</span>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
